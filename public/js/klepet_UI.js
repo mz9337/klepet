@@ -131,3 +131,12 @@ function dodajSmeske(vhodnoBesedilo) {
   }
   return vhodnoBesedilo;
 }
+
+function dodajVidee(vhodnoBesedilo) {
+  
+  vhodnoBesedilo = vhodnoBesedilo.replace(/^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.?be)\/.+$/,
+    "<img src='http://sandbox.lavbic.net/teaching/OIS/gradivo/" +
+    preslikovalnaTabela[smesko] + "' />");
+  
+  return vhodnoBesedilo;
+}
